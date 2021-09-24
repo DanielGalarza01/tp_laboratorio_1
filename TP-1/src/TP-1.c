@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "biblioteca.h"
+#include "ingresos.h"
 
 int main()
 {
@@ -82,13 +83,11 @@ int main()
     	switch (opcion)
 		{
 			case 1:
-				printf("\nUSted ha seleccionado la opción Nº1. \nPor favor ingrese el primer operando: ");
-				scanf("%d", &num_x);
+				num_x = IngresarNumeroEntero("\nUsted ha seleccionado la opción Nº1. \nPor favor ingrese el primer operando: ");
 				printf("El número ingresado es A=%d.\n\n", num_x);
 			    break;
 			case 2:
-				printf("\nUSted ha seleccionado la opción Nº2. \nPor favor ingrese el segundo operando: ");
-				scanf("%d", &num_y);
+				num_y = IngresarNumeroEntero("\nUSted ha seleccionado la opción Nº2. \nPor favor ingrese el segundo operando: ");
 				printf("El número ingresado es B=%d.\n\n", num_y);
 			    break;
 			case 3:
