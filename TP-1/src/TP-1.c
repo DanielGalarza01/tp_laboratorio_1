@@ -87,8 +87,8 @@ int main()
 				printf("El número ingresado es A=%d.\n\n", num_x);
 			    break;
 			case 2:
-				num_y = IngresarNumeroEntero("\nUSted ha seleccionado la opción Nº2. \nPor favor ingrese el segundo operando: ");
-				printf("El número ingresado es B=%d.\n\n", num_y);
+				num_y = IngresarNumeroEntero("\nUsted ha seleccionado la opción Nº2. \nPor favor ingrese el segundo operando: ");
+				printf("\nEl número ingresado es B=%d.\n\n", num_y);
 			    break;
 			case 3:
 				printf("\nUsted ha seleccionado la opción Nº3. \nCalcular todas las operaciones.\n\na) Calcular la suma (A+B).\nb) Calcular la resta (A-B).\nc) Calcular la division (A/B).\nd) Calcular la multiplicacion (A*B).\ne) Calcular el factorial (A!).\n\nPor favor elija la opción Nº4 para conocer los resultados\n\n");
@@ -100,6 +100,7 @@ int main()
 			    resultadoFactorialDeB=factorialDeEnteros(num_y);
 			    break;
 			case 4:
+				printf("Usted ha seleccionado la opción 4.\nLos resultados son los siguientes: \n\n");
 			    printf("\nEl resultado de la suma es %d.\n", resultadoSuma);
 			    printf("\nEl resultado de la resta es %d.\n", resultadoResta);
 			    printf("\nEl resultado del producto de los dos números es %d.\n", resultadoProducto);
