@@ -25,8 +25,11 @@ void productoDeEnteros(int numero1, int numero2, int* resultado);
 /// @param resultado (devuelve por referencia un número flotante como resultado del cociente de los mismos.)
 /// @return Devuelve "1" si se pudo realizar la operación y "0" en el caso de no poder realizarla.
 int cocienteDeEnteros(int numero1, int numero2, float* resultado);
-/// @param numero (recibe un número enterocomo primer dato.)
-/// @return Devuelve el factorial del número que recibe.
-int factorialDeEnteros(int numero);
+/// @brief Realiza el cálculo del factorial del número ingresado.
+///
+/// @param numero (recibe como dato un número entero.)
+/// @param factorial (devuelve por referencia el factorial del número recibido)
+/// @return Retorna 1 si fue posible el cálculo y de lo contrario retorna 0.
+int factorialDeEnteros(int numero, int* factorial);
 
 #endif /* BIBLIOTECA_H_ */

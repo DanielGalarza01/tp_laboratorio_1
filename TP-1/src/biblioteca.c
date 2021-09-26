@@ -45,17 +45,25 @@ int cocienteDeEnteros(int numero1, int numero2, float* resultado)
     return flag;
 }
 
-int factorialDeEnteros(int numero)
+int factorialDeEnteros(int numero, int* factorial)
 {
-    int factorial;
+
+    int aux;
     int i;
-    factorial=1;
+    aux=1;
 
-    for(i=1; i<=numero;i++)
+    if(numero>=0)
     {
-        factorial=factorial*i;
+    	for(i=1; i<=numero;i++)
+    	    {
+    	        aux=aux*i;
+    	    }
+    	*factorial=aux;
+    	return 1;
     }
-
-    return factorial;
+    else
+    {
+    	return 0;
+    }
 }
 
